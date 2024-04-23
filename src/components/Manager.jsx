@@ -15,7 +15,7 @@ const Manager = () => {
     useEffect(() => {
         let passwords = localStorage.getItem("passwords")
         if (passwords) {
-            passwordArray = JSON.parse(passwords)
+            const passwordArray = JSON.parse(passwords)
         }
     }, [])
 
